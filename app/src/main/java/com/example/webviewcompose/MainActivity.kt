@@ -14,11 +14,13 @@ import androidx.compose.ui.viewinterop.AndroidView
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.webviewcompose.ui.theme.WebViewComposeTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        installSplashScreen()
         setContent {
             WebViewComposeTheme {
                 // A surface container using the 'background' color from the theme
@@ -52,7 +54,7 @@ fun WebviewScreen(){
                     }
                 }
                 settings.javaScriptEnabled = true
-                loadUrl("https://github.com/ahmetgurr")
+                loadUrl("https://www.cutout.pro/photo-enhancer-sharpener-upscaler")
                 webView = this
             }
         }, update = {
