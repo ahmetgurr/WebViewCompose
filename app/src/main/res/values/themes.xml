@@ -3,8 +3,9 @@
 
     <style name="Theme.SplashScreen.MySplash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">#FFFFFF</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/github2</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/biesaasatsplash</item>
         <item name="postSplashScreenTheme">@style/Theme.SplashScreen</item>
+
     </style>
 
     <style name="Theme.WebViewCompose" parent="android:Theme.Material.Light.NoActionBar" />

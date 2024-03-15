@@ -19,6 +19,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.FileProvider
+import androidx.core.view.WindowCompat
 import java.io.File
 import java.io.IOException
 import java.text.SimpleDateFormat
@@ -55,6 +56,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        actionBar?.hide()
         setContent {
             WebViewScreen()
         }
@@ -71,7 +73,7 @@ class MainActivity : ComponentActivity() {
                     WebView(context).apply {
                         webViewClient = WebViewClient()
                         settings.javaScriptEnabled = true
-                        loadUrl("https://www.simpleimageresizer.com/image-converter")
+                        loadUrl("https://biesaasat.com/Account/Login?ReturnUrl=%2F")
                         webView = this
                         webChromeClient = object : WebChromeClient() {
                             override fun onShowFileChooser(

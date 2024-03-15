@@ -11,9 +11,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/github2"
+        android:icon="@drawable/biesaasat"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/github2"
+        android:roundIcon="@drawable/biesaasat"
         android:supportsRtl="true"
         android:theme="@style/Theme.SplashScreen.MySplash"
         tools:targetApi="31">
@@ -21,7 +21,7 @@
 
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="Biesaasat"
             android:theme="@style/Theme.SplashScreen.MySplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
